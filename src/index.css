@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background: #000;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: local("Rubik-Regular"),
+    url('./assets/fonts/Rubik/Rubik-Regular.ttf')
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+    color: whitesmoke;
+}
+
+input {
+    color: black;
+}

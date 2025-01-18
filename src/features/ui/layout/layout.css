@@ -1,0 +1,56 @@
+@keyframes move-background-sky {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@keyframes move-background-glow {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-background-clouds {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.sky-background, .glowing-stars, .floating-clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+.sky-background {
+    background: #000 url("imgs/sky_texture.png") repeat top center;
+    z-index: 0;
+    animation: move-background-sky 500s linear infinite;
+}
+
+.glowing-stars {
+    background: transparent url("imgs/star_glow.png") repeat top center;
+    z-index: 1;
+    animation: move-background-glow 500s linear infinite;
+}
+
+.floating-clouds {
+    background: transparent url("imgs/cloud_texture.png") repeat top center;
+    z-index: 2;
+    opacity: .6;
+    animation: move-background-clouds 500s linear infinite;
+}
