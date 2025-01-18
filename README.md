@@ -1,10 +1,10 @@
-## README
-
 # StarWars Search Application
 
 This is a StarWars search application that allows users to search through various entities of the StarWars universe
 using the [SWAPI API](https://swapi.py4e.com/). It provides autocomplete functionality, category-specific pages, and the
 ability to edit or add new data locally.
+
+🚀 **Live Demo**: [StarWars Search App](https://starwars-search-app.duckdns.org/)
 
 ## Features
 
